@@ -1,7 +1,7 @@
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 export const ADD = 'ADD';
-export const SUBSTRACT = 'SUBSTRACT';
+export const SUBTRACT = 'SUBTRACT';
 export const STORE_RESULT = 'STORE_RESULT';
 export const DELETE_RESULT = 'DELETE_RESULT';
 
@@ -17,30 +17,30 @@ export const decrement = () => {
     };
 };
 
-export const substract = (val) => {
+export const subtract = (value) => {
     return {
-        type: SUBSTRACT,
-        val: val
+        type: SUBTRACT,
+        val: value
     };
 };
 
-export const add = (val) => {
+export const add = (value) => {
     return {
         type: ADD,
-        val: val
+        val: value
     };
 };
 
-export const storeResult = (result) => {
+export const storeResult = (res) => {
     return {
         type: STORE_RESULT,
-        result: result
+        result: res
     };
 };
 
-export const deleteResult = (id) => {
+export const deleteResult = (resElId) => {
     return {
         type: DELETE_RESULT,
-        resultElId: id
+        resultElId: resElId
     };
 };
