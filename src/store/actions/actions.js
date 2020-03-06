@@ -10,3 +10,37 @@ export const increment = () => {
         type: INCREMENT
     };
 };
+
+export const decrement = () => {
+    return {
+        type: DECREMENT
+    };
+};
+
+export const substract = (val) => {
+    return {
+        type: SUBSTRACT,
+        val: val
+    };
+};
+
+export const add = (val) => {
+    return {
+        type: ADD,
+        val: val
+    };
+};
+
+export const storeResult = (result) => {
+    return {
+        type: STORE_RESULT,
+        result: result
+    };
+};
+
+export const deleteResult = (id) => {
+    return {
+        type: DELETE_RESULT,
+        resultElId: id
+    };
+};
